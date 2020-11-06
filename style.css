@@ -3,8 +3,6 @@ body{
   align-items: center;
   justify-content: center;
 }
-
-
 .added-text{
   font-size: 55px;
   color: #293cdf;
@@ -22,5 +20,29 @@ body{
   to {
     opacity: 1;
     width: 100%;
+  }
+}
+.text{
+  position: relative;
+  margin-bottom: 100px;
+}
+.cursor{
+    height: 5px;
+    margin-bottom: -4px;
+    width: 55px;
+    background: #000000;
+    opacity: 0;
+    display: inline-block;
+    animation: blink 0.7s linear infinite alternate;
+    position: absolute;
+    bottom: -55px;
+    left: -11px;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
